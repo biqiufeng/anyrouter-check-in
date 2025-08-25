@@ -5,9 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
       - biqiufeng-patch-1  # <--- 添加你的分支名
-      - 'origin/biqiufeng-patch-1' # <--- 或者使用通配符，匹配所有 feature/ 开头的分支
   pull_request:
     branches:
       - main
