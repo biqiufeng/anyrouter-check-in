@@ -8,7 +8,7 @@ on:
       - biqiufeng-patch-1  # <--- 添加你的分支名
   pull_request:
     branches:
-      - main
+      - biqiufeng-patch-1
 jobs:
   checkin:
     runs-on: windows-latest
