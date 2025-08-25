@@ -17,6 +17,7 @@ class NotificationKit:
         self.feishu_webhook = os.getenv('FEISHU_WEBHOOK')
         self.weixin_webhook = os.getenv('WEIXIN_WEBHOOK')
 
+
     def send_email(self, title: str, content: str, msg_type: Literal['text', 'html'] = 'text'):
         if not self.email_user or not self.email_pass or not self.email_to:
             raise ValueError("Email configuration not set")
